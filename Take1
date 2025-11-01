@@ -1,0 +1,138 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="-20 -20 520 320">
+  <!-- Scale: 1 ft = 10 px -->
+  <!-- Built-up outer rectangle (47.1 x 24.6 ft => 471 x 246 px) -->
+  <rect x="0" y="0" width="471" height="246" fill="#fff" stroke="#000" stroke-width="2"/>
+  <!-- Outer label -->
+  <text x="235" y="-2" font-size="10" text-anchor="middle">Built-up: 47.10' × 24.60' (north up)</text>
+
+  <!-- Rooms placed to match sketch (coordinates in px = ft*10) -->
+  <!-- 3rd Room (NW) 9.3 x 14 ft -->
+  <rect x="0" y="0" width="93" height="140" fill="#f6f6ff" stroke="#000"/>
+  <text x="46" y="70" font-size="10" text-anchor="middle">3rd Room</text>
+  <text x="46" y="82" font-size="9" text-anchor="middle">9.3' × 14'</text>
+
+  <!-- Staircase to right of 3rd Room: 9.3 x 7 ft -->
+  <rect x="93" y="0" width="93" height="70" fill="#fff0f0" stroke="#000"/>
+  <text x="139" y="40" font-size="9" text-anchor="middle">Stair</text>
+  <text x="139" y="52" font-size="9" text-anchor="middle">9.3' × 7'</text>
+  <!-- simple stairs -->
+  <g stroke="#000" stroke-width="0.8">
+    <line x1="95" y1="10" x2="184" y2="10"/>
+    <line x1="95" y1="20" x2="184" y2="20"/>
+    <line x1="95" y1="30" x2="184" y2="30"/>
+    <line x1="95" y1="40" x2="184" y2="40"/>
+    <line x1="95" y1="50" x2="184" y2="50"/>
+  </g>
+
+  <!-- Bathroom & Toilet (to the right of stair) 9.3 x 10.6 ft -->
+  <rect x="186" y="0" width="93" height="106" fill="#e6fff0" stroke="#000"/>
+  <text x="232" y="50" font-size="9" text-anchor="middle">Bath & W.C.</text>
+  <text x="232" y="62" font-size="9" text-anchor="middle">9.3' × 10.6'</text>
+
+  <!-- 1st Room (NE) 8.6 x 10 ft -->
+  <rect x="279" y="0" width="86" height="100" fill="#fffbe6" stroke="#000"/>
+  <text x="322" y="40" font-size="9" text-anchor="middle">1st Room</text>
+  <text x="322" y="52" font-size="9" text-anchor="middle">8.6' × 10'</text>
+
+  <!-- Lower left (SW): 2nd Room 14 x 12 ft -->
+  <rect x="0" y="140" width="140" height="120" fill="#fff0ff" stroke="#000"/>
+  <text x="70" y="200" font-size="9" text-anchor="middle">2nd Room</text>
+  <text x="70" y="212" font-size="9" text-anchor="middle">14' × 12'</text>
+
+  <!-- Lower center: Hall 13 x 11.6 ft -->
+  <rect x="140" y="120" width="130" height="116" fill="#f0fff6" stroke="#000"/>
+  <text x="205" y="170" font-size="9" text-anchor="middle">Hall</text>
+  <text x="205" y="182" font-size="9" text-anchor="middle">13' × 11.6'</text>
+
+  <!-- Lower right: Kitchen 8.6 x 12 ft -->
+  <rect x="370" y="120" width="86" height="120" fill="#fff4e6" stroke="#000"/>
+  <text x="413" y="170" font-size="9" text-anchor="middle">Kitchen</text>
+  <text x="413" y="182" font-size="9" text-anchor="middle">8.6' × 12'</text>
+
+  <!-- Small passage 4x2 ft near center (drawn as corridor) -->
+  <rect x="279" y="100" width="40" height="20" fill="#ddd" stroke="#000"/>
+  <text x="299" y="114" font-size="8" text-anchor="middle">Passg 4'×2'</text>
+
+  <!-- Doors (simplified single-leaf arcs) -->
+  <!-- door to 3rd room from hall area -->
+  <path d="M93 100 A15 15 0 0 1 108 115" stroke="#000" fill="none"/>
+  <!-- door to 2nd room -->
+  <path d="M140 200 A15 15 0 0 0 125 215" stroke="#000" fill="none"/>
+  <!-- kitchen door -->
+  <path d="M370 160 A15 15 0 0 1 385 175" stroke="#000" fill="none"/>
+
+  <!-- Exterior dimension arrows (clockwise) -->
+  <!-- North side dims: split into 9.3, 9.3, 9.3, 8.6, 10.6 -->
+  <g stroke="#000" stroke-width="1" fill="#000" font-size="8">
+    <!-- arrows / extension lines -->
+    <line x1="0" y1="-20" x2="93" y2="-20"/>
+    <line x1="93" y1="-20" x2="186" y2="-20"/>
+    <line x1="186" y1="-20" x2="279" y2="-20"/>
+    <line x1="279" y1="-20" x2="365" y2="-20"/>
+    <line x1="365" y1="-20" x2="471" y2="-20"/>
+    <!-- arrowheads -->
+    <path d="M0 -22 L0 -18 L3 -20 Z" />
+    <path d="M93 -22 L93 -18 L90 -20 Z" />
+    <path d="M186 -22 L186 -18 L189 -20 Z" />
+    <path d="M279 -22 L279 -18 L282 -20 Z" />
+    <path d="M365 -22 L365 -18 L368 -20 Z" />
+    <path d="M471 -22 L471 -18 L468 -20 Z" />
+    <!-- values -->
+    <text x="46" y="-26" text-anchor="middle">9.30'</text>
+    <text x="139.5" y="-26" text-anchor="middle">9.30'</text>
+    <text x="232.5" y="-26" text-anchor="middle">9.30'</text>
+    <text x="322" y="-26" text-anchor="middle">8.60'</text>
+    <text x="418" y="-26" text-anchor="middle">10.60'</text>
+    <!-- overall -->
+    <line x1="0" y1="-34" x2="471" y2="-34" stroke="#000"/>
+    <text x="235" y="-36" font-size="9" text-anchor="middle">47.10'</text>
+  </g>
+
+  <!-- East side dims (clockwise down) -->
+  <g stroke="#000" stroke-width="1" fill="#000" font-size="8">
+    <line x1="485" y1="0" x2="485" y2="100"/>
+    <line x1="485" y1="100" x2="485" y2="206"/>
+    <line x1="485" y1="206" x2="485" y2="246"/>
+    <!-- text along middle segments -->
+    <text x="490" y="40" font-size="9">10.00'</text>
+    <text x="490" y="160" font-size="9">10.60'</text>
+    <text x="490" y="230" font-size="9">4.00'</text>
+    <text x="490" y="260" font-size="9">24.60' total</text>
+  </g>
+
+  <!-- South side dims (right→left) -->
+  <g stroke="#000" stroke-width="1" fill="#000" font-size="8">
+    <line x1="471" y1="266" x2="385" y2="266"/>
+    <line x1="385" y1="266" x2="255" y2="266"/>
+    <line x1="255" y1="266" x2="115" y2="266"/>
+    <line x1="115" y1="266" x2="0" y2="266"/>
+    <text x="428" y="278" text-anchor="middle">8.60'</text>
+    <text x="320" y="278" text-anchor="middle">13.00'</text>
+    <text x="185" y="278" text-anchor="middle">14.00'</text>
+    <text x="57" y="278" text-anchor="middle">11.50'</text>
+    <line x1="0" y1="286" x2="471" y2="286"/>
+    <text x="235" y="298" font-size="9" text-anchor="middle">47.10'</text>
+  </g>
+
+  <!-- West side dims (bottom→top) -->
+  <g stroke="#000" stroke-width="1" fill="#000" font-size="8">
+    <line x1="-14" y1="246" x2="-14" y2="140"/>
+    <line x1="-14" y1="140" x2="-14" y2="20"/>
+    <line x1="-14" y1="20" x2="-14" y2="0"/>
+    <text x="-26" y="190" font-size="9" transform="rotate(-90 -26,190)">12.00'</text>
+    <text x="-26" y="80" font-size="9" transform="rotate(-90 -26,80)">12.00'</text>
+    <text x="-26" y="8" font-size="9" transform="rotate(-90 -26,8)">0.60' (walls)</text>
+    <text x="-26" y="-12" font-size="9" transform="rotate(-90 -26,-12)">24.60' total</text>
+  </g>
+
+  <!-- Legend -->
+  <rect x="0" y="260" width="471" height="40" fill="#fff" stroke="none"/>
+  <text x="6" y="276" font-size="9">Legend: Ext wall 8" | Int partition 4" | Doors (arc) | Stairs lines indicate treads</text>
+  <text x="6" y="290" font-size="9">Notes: Dimensions in feet ('), all dims clockwise around built-up shown. Scale 1 ft =10 px.</text>
+
+  <!-- North arrow -->
+  <g transform="translate(450,10)">
+    <path d="M0 0 L6 12 L-6 12 Z" fill="#000"/>
+    <text x="0" y="26" font-size="9" text-anchor="middle">N</text>
+  </g>
+</svg>
